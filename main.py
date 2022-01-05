@@ -168,6 +168,7 @@ for para in all_paras:
                         start={"sz": 12, "val": "single", "color": "#000000", "shadow": "true"},
                         end={"sz": 12, "val": "single", "color": "#000000"},
                     )
+                    
                     cells[col_idx].text = str(tbl_dt[row_idx, col_idx, 0]) if tbl_dt[row_idx, col_idx, 0] else ""
                     for paragraph in cells[col_idx].paragraphs:
                         for run in paragraph.runs:
